@@ -2,3 +2,30 @@ body{
     background-color: black;
     color: white;
 }
+
+#ads{
+    flex-direction: row;
+    justify-content: center;
+}
+
+#adsText{
+    color: black;
+    font-weight: bolder;
+}
+
+.middleForm{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    border: 3px solid red;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(210,47,39);
+    /*align-items: center;*/
+}
+#otherContainer {
+    display: flex;
+    align-items: center;
+}
+
