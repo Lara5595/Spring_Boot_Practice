@@ -22,7 +22,6 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb(210,47,39);
-    /*align-items: center;*/
 }
 #otherContainer {
     display: flex;
