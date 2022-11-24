@@ -15,7 +15,7 @@ public class Blog {
     private String title;
 
     @Column(nullable = false, length = 100)
-    private String genre;
+    private String body;
 
 
 //    Getters and Setters
@@ -37,25 +37,24 @@ public class Blog {
         this.title = title;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getBody() {
+        return body;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setBody(String body) {
+        this.body = body;
     }
 
-
-//    Constructors
+    //    Constructors
 
 
     public Blog() {
     }
 
-    public Blog(String title, String genre) {
-        this.title = title;
-        this.genre = genre;
-    }
 
+    public Blog(String title, String body) {
+        this.title = title;
+        this.body = body;
+    }
 
 } //End of blog
