@@ -16,6 +16,21 @@
 <nav th:replace="partials/partialsBlog :: bootstrap-side"></nav>
 
 
+<!--Form to add a blog-->
+<div class="middleForm">
+    <fieldset class="centerform">
+        <legend class="d-flex justify-content-center mb-3">Add A Post</legend>
+        <!--    we use coffee/new that we created on  coffee controller-->
+        <form action="/blogs/blog" method="post">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+            <label for="body">Add A Post:</label>
+            <input type="text" id="body" name="body">
+            <input type="submit" value="submit">
+        </form>
+    </fieldset>
+</div>
+
 
 </body>
 </html>
