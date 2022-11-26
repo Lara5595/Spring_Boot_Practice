@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head th:replace="partials/partials.html :: head ('All Blogs')" >
+<head th:replace="partials/partialsAllBlogs.html :: head ('All Blogs')" >
     <meta charset="UTF-8">
     <title>Your Blogs</title>
 </head>
 <body>
 
-<nav th:replace="partials/partials.html :: bootstrap-nav"></nav>
+<nav th:replace="partials/partialsAllBlogs.html :: bootstrap-nav"></nav>
 <br>
 
-<h1>Your Movies: </h1>
+<nav th:replace="partials/partialsAllBlogs.html :: bootstrap-side"></nav>
+<h1>Your Post: </h1>
 
 <br>
-<ul th:each="movies : ${movies}">
+<ul th:each= "blogs : ${blogs}">
     <li>
-        <h2 th:text="${movies.title}"></h2>
-        <p th:text="${movies.genre}"></p>
+        <h2 th:text="${blogs.title}"></h2>
+        <p th:text="${blogs.body}"></p>
     </li>
 </ul>
 
