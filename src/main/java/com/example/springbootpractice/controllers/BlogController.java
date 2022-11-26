@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/blogs")
 public class BlogController {
 
+
+
     @GetMapping("/blog")
     public String homePage(){
         return "blogs/blog";
