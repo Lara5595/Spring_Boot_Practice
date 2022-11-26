@@ -3,10 +3,13 @@ package com.example.springbootpractice.controllers;
 import com.example.springbootpractice.models.Blog;
 import com.example.springbootpractice.repositories.BlogsRepository;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/blogs")
@@ -37,6 +40,13 @@ public class BlogController {
     }
 
 
+//    I am creating the mapping for the allBlogs
+    @GetMapping("/allBlogs")
+    public String allBlogs(Model model){
+        List<Blog> allBlogs = blogDao.findAll();
+        model.addAttribute("blogs", allBlogs);
+        return "blogs/allBlogs";
+    }
 
 
 
