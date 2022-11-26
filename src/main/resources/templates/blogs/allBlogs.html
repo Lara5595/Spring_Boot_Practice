@@ -9,16 +9,12 @@
 <nav th:replace="partials/partialsAllBlogs.html :: bootstrap-nav"></nav>
 <br>
 
-<nav th:replace="partials/partialsAllBlogs.html :: bootstrap-side"></nav>
+<!--<nav th:replace="partials/partialsAllBlogs.html :: bootstrap-side"></nav>-->
 <h1>Your Post: </h1>
 
 <br>
-<ul th:each= "blogs : ${blogs}">
-    <li>
-        <h2 th:text="${blogs.title}"></h2>
-        <p th:text="${blogs.body}"></p>
-    </li>
-</ul>
+
+<div th:replace="partials/partialsAllBlogs.html :: bootstrap-cards"></div>
 
 
 </body>

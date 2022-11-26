@@ -68,6 +68,20 @@
 
 
 
+<!--Cards-->
+<div th:each= "blogs : ${blogs}" th:fragment="bootstrap-cards" class="card">
+    <div class="card-header">
+        Post
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p th:text="${blogs.title}"> </p>
+            <footer class="blockquote-footer" th:text="${blogs.body}"> <cite title="Source Title">User</cite></footer>
+        </blockquote>
+    </div>
+</div>
+
+
 
 
 
