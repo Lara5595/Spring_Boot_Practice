@@ -30,6 +30,12 @@ public class BlogController {
         return "blogs/blog";
     }
 
+//    Login page
+    @GetMapping("/loginBlog")
+    public String loginPage(){
+        return "blogs/loginBlog";
+    }
+
 
 //    This creates the post
     @PostMapping("/blog")
