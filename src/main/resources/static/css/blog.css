@@ -1,5 +1,6 @@
 body{
     background-color: gray;
+    min-height: 100%;
 }
 
 
@@ -74,7 +75,3 @@ body{
 }
 
 
-
-
-/*display: grid;*/
-/*place-items: center;*/
